@@ -13,4 +13,9 @@ MonoBehaviour:
   m_Name: SampleScenePrefabs
   m_EditorClassIdentifier: 
   IsDefault: 0
-  List: []
+  List:
+  - Override: 0
+    Prefab: {fileID: 8921789205124766477, guid: 883ea0d581d628044acf91e8f21f06fa, type: 3}
+    SourcePrefabToOverride: {fileID: 0}
+    SourceHashToOverride: 0
+    OverridingTargetPrefab: {fileID: 0}

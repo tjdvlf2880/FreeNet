@@ -1,8 +1,9 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-using Unity.Netcode;
 using Epic.OnlineServices.P2P;
+using Unity.Netcode;
+using Epic.OnlineServices;
 public class EOSNetcodeTransport : NetworkTransport
 {
 
@@ -17,8 +18,8 @@ public class EOSNetcodeTransport : NetworkTransport
     private NetworkManager networkManager;
     struct ServerConnectionChangeInfo
     {
-       public int connectID;
-       public EOS_Socket.Connection connection;
+        public int connectID;
+        public EOS_Socket.Connection connection;
     }
 
     Queue<ServerConnectionChangeInfo> _ServerConnectionChangeInfo;
@@ -28,7 +29,7 @@ public class EOSNetcodeTransport : NetworkTransport
     int m_NextTransportID = 0;
 
     #region Use This Method instead of using NetworkManager directly
-    public void StartServer(EOSWrapper.ETC.PUID localPUID,string socketName)
+    public void StartServer(EOSWrapper.ETC.PUID localPUID, string socketName)
     {
         var _eosNet = SingletonMonoBehaviour<EOS_Core>._instance;
         _eosNet.GetComponent<EOSNetcodeTransport>().InitializeEOSServer(localPUID, socketName, 0);
@@ -48,57 +49,110 @@ public class EOSNetcodeTransport : NetworkTransport
         NetworkManager.Singleton.StartHost();
         _eosNet.GetComponent<EOSNetcodeTransport>().StartClient();
     }
+    
+    //call this method if you want Proc Event Immediately..
+    public void PollConnectEvent()
+    {
+        while (true)
+        {
+            var netEventType = NetworkEvent.Nothing;
+            if (networkManager.IsServer)
+            {
+                if (_ServerConnectionChangeInfo.TryDequeue(out var serverInfo))
+                {
+                    var transportId = (ulong)serverInfo.connectID;
+                    if (serverInfo.connection._State == EOS_Socket.Connection.State.Connected)
+                    {
+                        netEventType = NetworkEvent.Connect;
+                    }
+                    else
+                    {
+                        netEventType = NetworkEvent.Disconnect;
+                    }
+                    InvokeOnTransportEvent(netEventType, transportId, default, Time.realtimeSinceStartup);
+                }
+            }
+            else
+            {
+                if (_ClientConnectionChangeInfo.TryDequeue(out var clientInfo))
+                {
+                    var transportId = ServerClientId;
+                    if (clientInfo._State == EOS_Socket.Connection.State.Connected)
+                    {
+                        netEventType = NetworkEvent.Connect;
+                    }
+                    else
+                    {
+                        netEventType = NetworkEvent.Disconnect;
+                    }
+                    InvokeOnTransportEvent(netEventType, transportId, default, Time.realtimeSinceStartup);
+                }
+            }
+
+            if(netEventType==NetworkEvent.Nothing)
+            {
+                break;
+            }
+        }
+    }
+    public void PollDataEvent()
+    {
+        while (true)
+        {
+            var netEventType = NetworkEvent.Nothing;
+            if (networkManager.IsServer)
+            {
+                if (_server != null && _server._incomingPacket.TryDequeue(out var packetInfo))
+                {
+                    var transportId = (ulong)packetInfo.Item1;
+                    var payload = packetInfo.Item2;
+                    netEventType = NetworkEvent.Data;
+                    InvokeOnTransportEvent(netEventType, transportId, payload, Time.realtimeSinceStartup);
+                }
+            }
+            else
+            {
+                if (_client != null && _client._incomingPacket.TryDequeue(out var packet))
+                {
+                    var transportId = ServerClientId;
+                    var payload = packet;
+                    netEventType = NetworkEvent.Data;
+                    InvokeOnTransportEvent(netEventType, transportId, payload, Time.realtimeSinceStartup);
+                }
+            }
+
+            if (netEventType == NetworkEvent.Nothing)
+            {
+                break;
+            }
+        }
+    }
     #endregion
     #region Netcode Transport Override
     public override void Initialize(NetworkManager networkManager = null)
     {
         this.networkManager = networkManager;
         this.networkManager.NetworkConfig.ClientConnectionBufferTimeout = 30;
+        this.networkManager.OnClientConnectedCallback += SetMTU;
         _ServerConnectionChangeInfo = new Queue<ServerConnectionChangeInfo>();
         _ClientConnectionChangeInfo = new Queue<EOS_Socket.Connection>();
+    }
+    void SetMTU(ulong clientID)
+    {
+        this.networkManager.SetPeerMTU(clientID,P2PInterface.MaxPacketSize);
     }
     public override NetworkEvent PollEvent(out ulong transportId, out ArraySegment<byte> payload, out float receiveTime)
     {
         transportId = default;
         payload = default;
         receiveTime = Time.realtimeSinceStartup;
-        if(_ServerConnectionChangeInfo.TryDequeue(out var serverInfo))
-        {
-            transportId =(ulong)serverInfo.connectID;
-            if (serverInfo.connection._State == EOS_Socket.Connection.State.Connected)
-            {
-                return NetworkEvent.Connect;
-            }
-            else
-            {
-                return NetworkEvent.Disconnect;
-            }
-        }
-        if (_ClientConnectionChangeInfo.TryDequeue(out var clientInfo))
-        {
-            transportId = ServerClientId;
-            if (clientInfo._State == EOS_Socket.Connection.State.Connected)
-            {
-                return NetworkEvent.Connect;
-            }
-            else
-            {
-                return NetworkEvent.Disconnect;
-            }
-        }
-        if (_server != null && _server._incomingPacket.TryDequeue(out var packetInfo))
-        {
-            transportId =  (ulong)packetInfo.Item1;
-            payload = packetInfo.Item2;
-            return NetworkEvent.Data;
-        }
-        if (_client != null && _client._incomingPacket.TryDequeue(out var packet))
-        {
-            transportId = ServerClientId;
-            payload = packet;
-            return NetworkEvent.Data;
-        }
         return NetworkEvent.Nothing;
+    }
+    protected override void OnEarlyUpdate()
+    {
+        PollConnectEvent();
+        PollDataEvent();
+        base.OnEarlyUpdate();
     }
     public override void DisconnectLocalClient()
     {
@@ -123,10 +177,6 @@ public class EOSNetcodeTransport : NetworkTransport
         {
             reliability = Epic.OnlineServices.P2P.PacketReliability.ReliableUnordered;
         }
-        else if (networkDelivery == NetworkDelivery.ReliableFragmentedSequenced || networkDelivery == NetworkDelivery.ReliableSequenced)
-        {
-            reliability = Epic.OnlineServices.P2P.PacketReliability.ReliableOrdered;
-        }
 
         if (payload.Count > P2PInterface.MaxPacketSize)
         {
@@ -136,13 +186,13 @@ public class EOSNetcodeTransport : NetworkTransport
                 return;
             }
         }
-        if(transportID == ServerClientId)
+        if (transportID == ServerClientId)
         {
             _client.SendToServer(_client._channel, payload, reliability);
         }
         else
         {
-            _server.SendToClient(_server._channel, payload,(int)transportID, reliability);
+            _server.SendToClient(_server._channel, payload, (int)transportID, reliability);
         }
     }
     public override void Shutdown()
@@ -157,7 +207,7 @@ public class EOSNetcodeTransport : NetworkTransport
             Destroy(_server.gameObject);
             _server = null;
         }
-        if (_client!= null )
+        if (_client != null)
         {
             _client.Shutdown();
             _client._onConnectionStateChanged -= OnClientConnectionStateChangedCB;
@@ -167,6 +217,7 @@ public class EOSNetcodeTransport : NetworkTransport
             Destroy(_client.gameObject);
             _client = null;
         }
+        this.networkManager.OnClientConnectedCallback -= SetMTU;
         m_NextTransportID = 0;
     }
     public override bool StartClient()

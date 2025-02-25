@@ -26,7 +26,10 @@ public class NetworkSpawner : NetworkBehaviour
 
     private void Awake()
     {
-        //GetComponent<NetworkObject>().Spawn();
+        if(IsServer)
+        {
+            GetComponent<NetworkObject>().Spawn();
+        }
     }
     void UpdatePrefabList()
     {

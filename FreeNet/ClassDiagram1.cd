@@ -1,0 +1,1712 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Unity.Netcode.Components.AnticipatedNetworkTransform" Collapsed="true">
+    <Position X="7.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>NASBBABADCAgRAAQIAAgICgAAKEAQAAgiEgSAAEBAAI=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Components\AnticipatedNetworkTransform.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.Components.NetworkAnimatorStateChangeHandler" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="28.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAgAAABAAAABEAAAQhAAAIAAIACAAAAAAAIAAQAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Components\NetworkAnimator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Unity.Netcode.Components.NetworkAnimator" Collapsed="true">
+    <Position X="0.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAZIQKINUTIgiEIwAWCAggAAARRABBESAIEAASCAFI=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Components\NetworkAnimator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Unity.Netcode.Components.NetworkRigidbody" Collapsed="true">
+    <Position X="3" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACEA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Components\NetworkRigidbody.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.Components.NetworkRigidbody2D" Collapsed="true">
+    <Position X="5.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Components\NetworkRigidbody2D.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.Components.NetworkRigidbodyBase" Collapsed="true">
+    <Position X="4" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JAABABigiCCYAUC0AAAAEKQElBAVQ4hASgAIIYAIFEI=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Components\NetworkRigidBodyBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.Components.NetworkTransform" Collapsed="true">
+    <Position X="7.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>E8C5PICQdZimxwAnhJT8ubx0pBcPAhOmLQPMFxvjhUY=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Components\NetworkTransform.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.Components.RigidbodyContactEventManager" Collapsed="true">
+    <Position X="38.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAkAQAQAAAAEAIAAAAAAAAwAIQoIAAEQACAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Components\RigidbodyContactEventManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.BufferedLinearInterpolator&lt;T&gt;" Collapsed="true">
+    <Position X="11" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAUgAMQAAECUCAiAAAAACAUBAAAAAAAAYAAAhDBQAAQ=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Components\Interpolator\BufferedLinearInterpolator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.BufferedLinearInterpolatorFloat" Collapsed="true">
+    <Position X="8.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Components\Interpolator\BufferedLinearInterpolator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.BufferedLinearInterpolatorQuaternion" Collapsed="true">
+    <Position X="11" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAQAAAAAAAIAQAAABAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Components\Interpolator\BufferedLinearInterpolator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.BufferedLinearInterpolatorVector3" Collapsed="true">
+    <Position X="13.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAQAAAAAAAIAQAAABAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Components\Interpolator\BufferedLinearInterpolator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.QuaternionCompressor" Collapsed="true">
+    <Position X="35.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAEAAAAEAAAABAAAgAAEAgAQAAAAAAgAAEAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Components\QuaternionCompressor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.NetworkConfig" Collapsed="true">
+    <Position X="33.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wACAQQQAQAAEECIIEQkABJDAsCsEgAECAGACEAAAACg=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Configuration\NetworkConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.NetworkConstants" Collapsed="true">
+    <Position X="38.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Configuration\NetworkConstants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.NetworkPrefab" Collapsed="true">
+    <Position X="38.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAQCAAAAEogAAAAAABAAAAAAAAAAAAAAAEAQ=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Configuration\NetworkPrefab.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.NetworkPrefabs" Collapsed="true">
+    <Position X="42.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAKAAQQQAAAAJSBAAAAAABACAAAAAAAQAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Configuration\NetworkPrefabs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.NetworkPrefabsList" Collapsed="true">
+    <Position X="26.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAUAAAAAAAAAAAAEABIAAAAAAAAAAAAAAAAAQAAI=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Configuration\NetworkPrefabsList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.SessionConfig" Collapsed="true">
+    <Position X="37" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAIAAAAAAAAAAAAAAEAEAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Configuration\SessionConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.NetworkClient" Collapsed="true">
+    <Position X="31.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QBoAAAAAACAACABAgAAAAAIAIAAQAAACAABAACAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Connection\NetworkClient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.NetworkConnectionManager" Collapsed="true">
+    <Position X="37" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIQgQMAiBBEACQASKSgCCUgIAQCAhoSgBlACTTIIxIA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Connection\NetworkConnectionManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.PendingClient" Collapsed="true">
+    <Position X="31.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAQAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Connection\PendingClient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.ComponentFactory" Collapsed="true">
+    <Position X="40.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAEAAAQAAAAgAAAAAAAAAAAAABAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Core\ComponentFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.RpcException" Collapsed="true">
+    <Position X="40.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Core\NetworkBehaviour.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.NetworkBehaviour" Collapsed="true">
+    <Position X="4" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QigBhBdWpohwQTImkEgSIcgJAiYUAQ0neoBKsiACEgI=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Core\NetworkBehaviour.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.NetworkBehaviourUpdater" Collapsed="true">
+    <Position X="30" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAQAAAAkAAQAgAAEAAAAAAAQBAAABAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Core\NetworkBehaviourUpdater.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.NetworkManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="42.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QRcBgtUODIYn1QJjJBkWhcKBiyOUn5szBGiH7DRJaFQ=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Core\NetworkManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Unity.Netcode.NetworkObject" Collapsed="true">
+    <Position X="33.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>xFADgIUWhLlAQ1jh1l+u/EVrKYJQCUc0g4MV0LmXGNM=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Core\NetworkObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.NetworkObjectRefreshTool" Collapsed="true">
+    <Position X="37" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACCAAAAAAAAAkAAAAAQAAgoAAAMBAAAAAAAAAAIABA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Core\NetworkObjectRefreshTool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.NetworkUpdateLoop" Collapsed="true">
+    <Position X="35.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAQAAoAAQQAAAAQAAAEAACAAAgAAAAAAEAIkAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Core\NetworkUpdateLoop.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.InvalidParentException" Collapsed="true">
+    <Position X="35.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Exceptions\InvalidParentException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.NetworkConfigurationException" Collapsed="true">
+    <Position X="35.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Exceptions\NetworkConfigurationException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.NotListeningException" Collapsed="true">
+    <Position X="26.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Exceptions\NotListeningException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.NotServerException" Collapsed="true">
+    <Position X="28.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Exceptions\NotServerException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.SpawnStateException" Collapsed="true">
+    <Position X="40.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Exceptions\SpawnStateException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.InvalidChannelException" Collapsed="true">
+    <Position X="31.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Exceptions\SpawnStateException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.VisibilityChangeException" Collapsed="true">
+    <Position X="38.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Exceptions\VisibilityChangeException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.XXHash" Collapsed="true">
+    <Position X="40.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Hashing\XXHash.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.NetworkLog" Collapsed="true">
+    <Position X="40.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BiAAAAAAAAQAAEAAAAEgwEAAJAAIAAAAABAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Logging\NetworkLog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.CustomMessagingManager" Collapsed="true">
+    <Position X="42.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEQAAAAAACAAABAAABAAAIEABAAAAoAAABCECAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\CustomMessageManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.DefaultMessageSender" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="26.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAEgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\DefaultMessageSender.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Unity.Netcode.DeferredMessageManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="30" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAQAAAAQAAAAAAAIAgAAAAAAAAAAEAEAAAAAAAQ=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\DeferredMessageManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Unity.Netcode.GenerateSerializationForGenericParameterAttribute" Collapsed="true">
+    <Position X="40.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\GenerateSerializationForGenericParameterAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.GenerateSerializationForTypeAttribute" Collapsed="true">
+    <Position X="42.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\GenerateSerializationForTypeAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.RpcMessageHelpers" Collapsed="true">
+    <Position X="26.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACBAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\Messages\RpcMessages.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.NetworkManagerHooks" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="26.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAUAgAAAAJgAIAAAgoAIAAAAAAAAEAAAEAAAEAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\NetworkManagerHooks.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Unity.Netcode.HandlerNotRegisteredException" Collapsed="true">
+    <Position X="26.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\NetworkMessageManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.InvalidMessageStructureException" Collapsed="true">
+    <Position X="33.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\NetworkMessageManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.NetworkMessageManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="28.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAQAGARwAKAFSAQGBKFAIAigBzGIAVAIDQABIBHAAAI=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\NetworkMessageManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Unity.Netcode.RpcAttribute" Collapsed="true">
+    <Position X="11.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAQQAAAAAAAAAAg=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\RpcAttributes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.ServerRpcAttribute" Collapsed="true">
+    <Position X="10.5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\RpcAttributes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.ClientRpcAttribute" Collapsed="true">
+    <Position X="12.75" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\RpcAttributes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.AuthorityRpcTarget" Collapsed="true">
+    <Position X="12.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAGAAAAAAAEAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\RpcTargets\AuthorityRpcTarget.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.BaseRpcTarget" Collapsed="true">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAQAAQAACgAAAgAAEAAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\RpcTargets\BaseRpcTarget.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Unity.Netcode.ClientsAndHostRpcTarget" Collapsed="true">
+    <Position X="6" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\RpcTargets\ClientsAndHostRpcTarget.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.DirectSendRpcTarget" Collapsed="true">
+    <Position X="10.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAgEAAACACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\RpcTargets\DirectSendRpcTarget.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Unity.Netcode.EveryoneRpcTarget" Collapsed="true">
+    <Position X="15" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgCAAAAAAAEAAAAAAAAAAAACAAABAAABAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\RpcTargets\EveryoneRpcTarget.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.LocalSendRpcTarget" Collapsed="true">
+    <Position X="17.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\RpcTargets\LocalSendRpcTarget.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.NotAuthorityRpcTarget" Collapsed="true">
+    <Position X="24" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\RpcTargets\NotAuthorityRpcTarget.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.NotMeRpcTarget" Collapsed="true">
+    <Position X="19.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgCAAABAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\RpcTargets\NotMeRpcTarget.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.NotOwnerRpcTarget" Collapsed="true">
+    <Position X="21.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAgCAAABAAAEAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\RpcTargets\NotOwnerRpcTarget.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.NotServerRpcTarget" Collapsed="true">
+    <Position X="24" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAACAAABAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\RpcTargets\NotServerRpcTarget.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.OwnerRpcTarget" Collapsed="true">
+    <Position X="1.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAgCAAAAAAAEAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\RpcTargets\OwnerRpcTarget.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.ProxyRpcTarget" Collapsed="true">
+    <Position X="3.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\RpcTargets\ProxyRpcTarget.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Unity.Netcode.ProxyRpcTargetGroup" Collapsed="true">
+    <Position X="3.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAMCAAAAgCAAAAAAAEAABCAAAAAAABAAAAAAEABAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\RpcTargets\ProxyRpcTargetGroup.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Unity.Netcode.RpcTarget" Collapsed="true">
+    <Position X="28.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAEaAAKAAAAABAEAAAACAADgAEAAAAAACAgBAgAI=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\RpcTargets\RpcTarget.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.RpcTargetGroup" Collapsed="true">
+    <Position X="8.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAMAAAAAACAAAAAAAEAAAKgAAAAAAEAAAAAAAABAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\RpcTargets\RpcTargetGroup.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Unity.Netcode.ServerRpcTarget" Collapsed="true">
+    <Position X="12.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAAAAAAAEAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\RpcTargets\ServerRpcTarget.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.MetricHooks" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="42.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAUAgAAAABgAIAAAgoAIAAAAAAAAAAAAEAAAEAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Metrics\MetricHooks.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Unity.Netcode.NetworkMetrics" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="30" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BEAEiioBQEHgIsCaIACQDCBQAAqQpAASgBKGgpuCoBM=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Metrics\NetworkMetrics.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Unity.Netcode.NetcodeObserver" Collapsed="true">
+    <Position X="26.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Metrics\NetworkMetrics.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.NetworkMetricsManager" Collapsed="true">
+    <Position X="31.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAQAAAAAAAAAAAgAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Metrics\NetworkMetricsManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.NetworkObjectProvider" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="35.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Metrics\NetworkObjectProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Unity.Netcode.NullNetworkMetrics" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="30" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEgiAAAABAIMAKIAAQDAAAAAAQJAASABICAgICABM=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Metrics\NullNetworkMetrics.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Unity.Netcode.AnticipatedNetworkVariable&lt;T&gt;" Collapsed="true">
+    <Position X="0.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JAQAFAEAACAIAIQVAACgICAACBACigAIABAjQEQAAAE=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\NetworkVariable\AnticipatedNetworkVariable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.NetworkList&lt;T&gt;" Collapsed="true">
+    <Position X="3" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CEIAAEEIACAAAFABCABAJAQABAAAgAAACAABAARQAAk=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\NetworkVariable\Collections\NetworkList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.NetworkVariable&lt;T&gt;" Collapsed="true">
+    <Position X="5.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAEAACAIJGQBAAAAAAAJAAACgAEAABAhAEQAAAE=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\NetworkVariable\NetworkVariable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.NetworkVariableBase" Collapsed="true">
+    <Position X="3" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAQAASUAACBADWQFAQgAAAQAAggigCAgAMABAEQCEYk=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\NetworkVariable\NetworkVariableBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Unity.Netcode.CollectionSerializationUtility" Collapsed="true">
+    <Position X="38.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAEAAAAAACAAAAAAAAAAAAAAAgAQAAAIAAAAEBAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\NetworkVariable\Serialization\CollectionSerializationUtility.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.FallbackSerializer&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="35.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAABAAAAAAAgAAACoAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\NetworkVariable\Serialization\FallbackSerializer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Unity.Netcode.RpcFallbackSerialization" Collapsed="true">
+    <Position X="42.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\NetworkVariable\Serialization\FallbackSerializer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.NetworkVariableEquality&lt;T&gt;" Collapsed="true">
+    <Position X="38.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAEAAAAAAAAAABAAAACAAAACAEAAAAAAAAACAEAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\NetworkVariable\Serialization\NetworkVariableEquality.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.NetworkVariableSerialization&lt;T&gt;" Collapsed="true">
+    <Position X="40.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACABAAAAAABgAAAAoAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\NetworkVariable\Serialization\NetworkVariableSerialization.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.NetworkVariableSerializationTypedInitializers" Collapsed="true">
+    <Position X="42.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAIAAAAAAECAARAAAAAASgASQAAAAAJUAAAAIAICCA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\NetworkVariable\Serialization\TypedILPPInitializers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.ShortSerializer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="38.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAgAAAAoAAAAgAAAAEAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\NetworkVariable\Serialization\TypedSerializerImplementations.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Unity.Netcode.UshortSerializer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="37" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAgAAAAoAAAAAAAEAEAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\NetworkVariable\Serialization\TypedSerializerImplementations.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Unity.Netcode.IntSerializer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="30" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAQAAAAgAAAAoAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\NetworkVariable\Serialization\TypedSerializerImplementations.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Unity.Netcode.UintSerializer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="42.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAABAAAAAAAgAAAAoAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\NetworkVariable\Serialization\TypedSerializerImplementations.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Unity.Netcode.LongSerializer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="38.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAgAAAAoAAAAAAAAAEAgAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\NetworkVariable\Serialization\TypedSerializerImplementations.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Unity.Netcode.UlongSerializer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="26.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAgAAAAoAAAAAAAAAEAAEA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\NetworkVariable\Serialization\TypedSerializerImplementations.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Unity.Netcode.UnmanagedTypeSerializer&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="33.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAABAAAAAAAgAAAAoAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\NetworkVariable\Serialization\TypedSerializerImplementations.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Unity.Netcode.ListSerializer&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="37" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAgAAAAoAAAAAAAAAEAAAE=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\NetworkVariable\Serialization\TypedSerializerImplementations.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Unity.Netcode.HashSetSerializer&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="28.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAABAAAAAAAgAAAAoAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\NetworkVariable\Serialization\TypedSerializerImplementations.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Unity.Netcode.DictionarySerializer&lt;TKey, TVal&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="31.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAgAAAAoAAAAAAAAAFAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\NetworkVariable\Serialization\TypedSerializerImplementations.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Unity.Netcode.UnmanagedArraySerializer&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="28.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAgAAAAoAAAAAAAAIEAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\NetworkVariable\Serialization\TypedSerializerImplementations.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Unity.Netcode.FixedStringSerializer&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="38.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAABAAAAAAAgAAAAoAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\NetworkVariable\Serialization\TypedSerializerImplementations.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Unity.Netcode.FixedStringArraySerializer&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="37" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAgAAAAoAAAAAAAAIEAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\NetworkVariable\Serialization\TypedSerializerImplementations.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Unity.Netcode.UnmanagedNetworkSerializableSerializer&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="31.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAABAAAAAAAgAAAAoAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\NetworkVariable\Serialization\TypedSerializerImplementations.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Unity.Netcode.UnmanagedNetworkSerializableArraySerializer&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="30" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAgAAAAoAAAAAAAAIEAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\NetworkVariable\Serialization\TypedSerializerImplementations.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Unity.Netcode.ManagedNetworkSerializableSerializer&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="40.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAABAAAAAAAgAAAAoAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\NetworkVariable\Serialization\TypedSerializerImplementations.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Unity.Netcode.UserNetworkVariableSerialization&lt;T&gt;" Collapsed="true">
+    <Position X="35.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAABAAAAAAAAAAAAgAQAAAAAAQAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\NetworkVariable\Serialization\UserNetworkVariableSerialization.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.ProfilingHooks" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="33.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAgCAAABgAIAACgqAIACAAAAAAAIBAEAAAEAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Profiling\ProfilingHooks.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Unity.Netcode.DefaultSceneManagerHandler" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="28.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAYEAQACAABAAAYCAIAABAAAAAAAIAAIAAgCAAgQ=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\SceneManagement\DefaultSceneManagerHandler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Unity.Netcode.SceneEvent" Collapsed="true">
+    <Position X="30" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAIAAAAAAAAAgAAAAAAAAAEAAAAgAgAAAAAABAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\SceneManagement\NetworkSceneManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.NetworkSceneManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="28.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>sXQox8UpOGE5ACWqQcBKHUAm5wdUIUggAEgLIBQUADQ=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\SceneManagement\NetworkSceneManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Unity.Netcode.SceneEventData" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="31.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CJEQDwQAAGEFoEICASgE0IoQQDFcA8EigAoAWDQcCCA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\SceneManagement\SceneEventData.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Unity.Netcode.SceneEventProgress" Collapsed="true">
+    <Position X="33.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAACQGBABABAACgAAAAAggAAMABgAhAAAgCAgAACA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\SceneManagement\SceneEventProgress.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.Arithmetic" Collapsed="true">
+    <Position X="28.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAgAAAAAAAAAAACAAAUAAACAQAAAAAgAAIAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Serialization\Arithmetic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.BitCounter" Collapsed="true">
+    <Position X="31.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABEAAAAAAACAAAAAACCAABAAAQBAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Serialization\BitCounter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.BytePacker" Collapsed="true">
+    <Position X="33.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAgIAAQAQAgAAAAAICCAACAAgAARAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Serialization\BytePacker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.ByteUnpacker" Collapsed="true">
+    <Position X="35.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAgAAAAAAAAAAABAAAAAAAAI=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Serialization\ByteUnpacker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.ByteUtility" Collapsed="true">
+    <Position X="37" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAQACAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Serialization\ByteUtility.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.NetworkPrefabHandler" Collapsed="true">
+    <Position X="40.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAQgAQAIAQAAAJQAgAAgAAAAAgABAIBAQAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Spawning\NetworkPrefabHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.NetworkSpawnManager" Collapsed="true">
+    <Position X="30" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UgFhABoAwABigqSBkKQShBAgGQKgAggAYQUADjAFQAg=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Spawning\NetworkSpawnManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.AnticipationSystem" Collapsed="true">
+    <Position X="26.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQgAAQAAIAAQgCAAIAQAAAAAAAACAAwAAAIgAAAAEA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Timing\AnticipationSystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.NetworkTickSystem" Collapsed="true">
+    <Position X="31.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAABEAAAAAAAACAIAEAAAAAACAAAAAAQAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Timing\NetworkTickSystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.NetworkTimeSystem" Collapsed="true">
+    <Position X="33.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BACAAAQIAASIBYiAEBhAAQDAABEEAACgACACEAAQAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Timing\NetworkTimeSystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.RealTimeProvider" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="37" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAABAAAAAAAABAAAAAAAAAAAAAQBAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Timing\RealTimeProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Unity.Netcode.NetworkTransport" Collapsed="true">
+    <Position X="11.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAIAACAAEQQgIEAAAwBAAiAAEAAAABAAQAwEAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Transports\NetworkTransport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.TestingNetworkTransport" Collapsed="true">
+    <Position X="12.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Transports\NetworkTransport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NetworkVariableDictionarySerialization&lt;TKey, TVal&gt;" Collapsed="true">
+    <Position X="37" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\NetworkVariable\Serialization\NetworkVariableEquality.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.Transports.UTP.BatchedReceiveQueue" Collapsed="true">
+    <Position X="30" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAIAQAAAAEAgAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Transports\UTP\BatchedReceiveQueue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.Transports.UTP.SecretsLoaderHelper" Collapsed="true">
+    <Position X="35.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIACAYAAAAAEIAEAAAAgMgABAACAAAgAEAEA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Transports\UTP\SecretsLoaderHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.Transports.UTP.ErrorUtilities" Collapsed="true">
+    <Position X="33.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAkAAAAABCAAAAABAAABAhAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Transports\UTP\UnityTransport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.Transports.UTP.UnityTransport" Collapsed="true">
+    <Position X="10.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ALNB4CYYER1BcQZsCVh3q4BkEaBACTHMUDIQQY1GpMA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Transports\UTP\UnityTransport.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Struct Name="Unity.Netcode.Components.HalfVector3" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="26.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAhQAAAAAAAwBAAAAEAAAAAIAAAAAAYAE=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Components\HalfVector3.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Unity.Netcode.Components.HalfVector4" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="28.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAgQAAAAQAAwBAAAAEAAAAAAAAAAAIYAE=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Components\HalfVector4.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Unity.Netcode.Components.NetworkDeltaPosition" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="40.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAACEAEAxAAAjAEAAAABABAAAAAQKI=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Components\NetworkDeltaPosition.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Unity.Netcode.Components.ContactEventHandlerInfo" Collapsed="true">
+    <Position X="28.25" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Components\RigidbodyContactEventManager.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Unity.Netcode.ConnectionEventData" Collapsed="true">
+    <Position X="42.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAgAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Connection\NetworkConnectionManager.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Unity.Netcode.DisconnectReasonMessage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="33.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAIAAAAAAAAAACBAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\DisconnectReasonMessage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Unity.Netcode.ILPPMessageProvider" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="30" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAIAAAAEgAAAAAAAACAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\ILPPMessageProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Unity.Netcode.AnticipationCounterSyncPingMessage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="28.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAASBAAAIAAAAAAAAAAQA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\Messages\AnticipationCounterSyncPingMessage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Unity.Netcode.AnticipationCounterSyncPongMessage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="30" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAASBAAAIAAAAAAAAAAQA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\Messages\AnticipationCounterSyncPingMessage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Unity.Netcode.ChangeOwnershipMessage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="26.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAgAAAAAAAhAAAAAqAAhQAAggChDAALAEIIAAMAQBCA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\Messages\ChangeOwnershipMessage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Unity.Netcode.ClientConnectedMessage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="30" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAgCAAAAAAACBAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\Messages\ClientConnectedMessage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Unity.Netcode.ClientDisconnectedMessage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="31.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAgAAAAAAAACBAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\Messages\ClientDisconnectedMessage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Unity.Netcode.ServiceConfig" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="31.75" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAhAAAAAAQEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\Messages\ConnectionApprovedMessage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Unity.Netcode.ConnectionApprovedMessage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="40.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAgCAAAAAVAAAJAAQAACAAAADDAgAIAAAAAACAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\Messages\ConnectionApprovedMessage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Unity.Netcode.ClientConfig" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="28.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAQEAIAAEAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\Messages\ConnectionRequestMessage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Unity.Netcode.ConnectionRequestMessage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="26.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAgAAAAQAAASAAAAAgQAAAAACBABAIAAAAAAAAAAAQ=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\Messages\ConnectionRequestMessage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Unity.Netcode.CreateObjectMessage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="30" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ICAAAAAAAAgAAISAAAAgAAAgACBCQgJgEQACCAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\Messages\CreateObjectMessage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Unity.Netcode.DestroyObjectMessage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="31.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAEAAAAgAAgIAAAAACAAgACBCAAJAAAAAEAAgAIA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\Messages\DestroyObjectMessage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Unity.Netcode.MessageVersionData" Collapsed="true">
+    <Position X="31.75" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAIAAAAAAAAAAAAAACBAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\Messages\MessageMetadata.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Unity.Netcode.NamedMessage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="33.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAIIAAAAAAAAAAIAAACBAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\Messages\NamedMessage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Unity.Netcode.NetworkTransformMessage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="35.25" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAACAAAAAAAAAACBAMAJAAgAABAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\Messages\NetworkTransformMessage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Unity.Netcode.NetworkVariableDeltaMessage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="37" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IEAACIAAAAgAAACAAACgIAAgACBAAAJQAAAQEAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\Messages\NetworkVariableDeltaMessage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Unity.Netcode.ParentSyncMessage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="40.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IABAAAAAAAwAAIAgAAIAAAAAACBAAQJAAQAAAACAACA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\Messages\ParentSyncMessage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Unity.Netcode.ProxyMessage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="42.25" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAQAAAAAAAAAAAAAAAAAAAACBAAAIAAAAAEAAAAAg=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\Messages\ProxyMessage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Unity.Netcode.RpcMetadata" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="31.75" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\Messages\RpcMessages.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Unity.Netcode.ServerRpcMessage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="42.25" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAACAAAAAAAAAAAABAAAAAAACBAAAJAAAAAAAAEAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\Messages\RpcMessages.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Unity.Netcode.ClientRpcMessage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="33.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAACAAAAAAAAAAAABAAAAAAACBAAAJAAAAAAAAEAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\Messages\RpcMessages.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Unity.Netcode.RpcMessage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="30" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAQCAAAAAAAAAAAABAAAAAAACBAAAJAAAAAAAAEAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\Messages\RpcMessages.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Unity.Netcode.ForwardServerRpcMessage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="42.25" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IEAAAAAIAAAAAAAAAAAAAAAAACBEAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\Messages\RpcMessages.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Unity.Netcode.ForwardClientRpcMessage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="40.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IEAAAAAAAACAAAAAAAAAAAAAACBAAAIAAAAAEAAAgAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\Messages\RpcMessages.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Unity.Netcode.SceneEventMessage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="38.75" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAEAAACBAAAIAAAAAAABAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\Messages\SceneEventMessage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Unity.Netcode.ServerLogMessage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="40.5" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAIAAAAAAAAAAAAAAAAAAAAAACBBAAIAAAAAIAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\Messages\ServerLogMessage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Unity.Netcode.SessionOwnerMessage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="33.5" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAACBAAAIAAAAQAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\Messages\SessionOwnerMessage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Unity.Netcode.TimeSyncMessage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="35.25" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAACBAAAIAAAAAAAAAQAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\Messages\TimeSyncMessage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Unity.Netcode.UnnamedMessage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="38.75" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAIAAAAAAAAAAAEAAACBAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\Messages\UnnamedMessage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Unity.Netcode.NetworkBatchHeader" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="35.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEBAAAAAgAAAAAAAAEAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\NetworkBatchHeader.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Unity.Netcode.NetworkContext" Collapsed="true">
+    <Position X="38.75" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BQAQAAAAAAAAAIAAAAACAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\NetworkContext.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Unity.Netcode.NetworkMessageHeader" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="26.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\NetworkMessageHeader.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Unity.Netcode.RpcSendParams" Collapsed="true">
+    <Position X="37" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\RpcParams.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Unity.Netcode.RpcReceiveParams" Collapsed="true">
+    <Position X="35.25" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\RpcParams.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Unity.Netcode.RpcParams" Collapsed="true">
+    <Position X="33.5" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAEAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\RpcParams.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Unity.Netcode.ServerRpcSendParams" Collapsed="true">
+    <Position X="30" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\RpcParams.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Unity.Netcode.ServerRpcReceiveParams" Collapsed="true">
+    <Position X="28.25" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\RpcParams.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Unity.Netcode.ServerRpcParams" Collapsed="true">
+    <Position X="26.5" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\RpcParams.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Unity.Netcode.ClientRpcSendParams" Collapsed="true">
+    <Position X="38.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\RpcParams.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Unity.Netcode.ClientRpcReceiveParams" Collapsed="true">
+    <Position X="37" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\RpcParams.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Unity.Netcode.ClientRpcParams" Collapsed="true">
+    <Position X="35.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\RpcParams.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Unity.Netcode.__RpcParams" Collapsed="true">
+    <Position X="26.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAQ=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\RpcParams.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Unity.Netcode.NetworkListEvent&lt;T&gt;" Collapsed="true">
+    <Position X="42.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQGgAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\NetworkVariable\Collections\NetworkList.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Unity.Netcode.NetworkVariableUpdateTraits" Collapsed="true">
+    <Position X="38.75" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAg=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\NetworkVariable\NetworkVariableBase.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Unity.Netcode.ResizableBitVector" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="28.25" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CCABAAAAgCAABAAAgAAAAQAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\NetworkVariable\Serialization\ResizableBitVector.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Unity.Netcode.BitReader" Collapsed="true">
+    <Position X="33.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACFAAAAEADEAgAAAAAAIAAAIAAAAAAAAAAAAAAAOBAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Serialization\BitReader.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Unity.Netcode.BitWriter" Collapsed="true">
+    <Position X="35.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACEAAAAEADAAAACAAAAIAABAAAQAIAAAAAAAAAAMAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Serialization\BitWriter.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Unity.Netcode.BufferSerializer&lt;TReaderWriter&gt;" Collapsed="true">
+    <Position X="37" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UAQAAAAAAEAAAAAAgAAAAAAAAAgAAAEAAABAIAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Serialization\BufferSerializer.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Unity.Netcode.BufferSerializerReader" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="38.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UAAAAAAAAEAAAAAAgAAAAAAIAAgAAAEAAABAIAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Serialization\BufferSerializerReader.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Unity.Netcode.BufferSerializerWriter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="40.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UAAAAAAAAFAAAAAAgAAAAAAAAAgAAAEAAABAIAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Serialization\BufferSerializerWriter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Unity.Netcode.FastBufferReader" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="35.25" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BCAoAIIAACEABAAgCMBBAABAAACAkEYQAIAABADgAAQ=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Serialization\FastBufferReader.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Unity.Netcode.FastBufferWriter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="37" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ADKQCAABAiAABCAgKEAGAAFCQAQgAAIgAAJAhYBAIQQ=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Serialization\FastBufferWriter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Unity.Netcode.ForceNetworkSerializeByMemcpy&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="38.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAgAAAAIAAAAAgIAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Serialization\ForceNetworkSerializeByMemcpy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Unity.Netcode.ByteBool" Collapsed="true">
+    <Position X="42.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Serialization\MemoryStructures\ByteBool.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Unity.Netcode.UIntFloat" Collapsed="true">
+    <Position X="37" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAABAAAAAAIEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Serialization\MemoryStructures\UIntFloat.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Unity.Netcode.NetworkBehaviourReference" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="37" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAQAAGAAAAgAAAAQAAAAAAAIAACAABAAACAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Serialization\NetworkBehaviourReference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Unity.Netcode.NetworkObjectReference" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="31.75" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAACAQAAAiAAAAAkAAAAQAAAAAAAIAAAAABAAABAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Serialization\NetworkObjectReference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Unity.Netcode.ReleasedNetworkId" Collapsed="true">
+    <Position X="26.5" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Spawning\ReleasedNetworkId.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Unity.Netcode.NetworkTime" Collapsed="true">
+    <Position X="33.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABCAAAACAAAAQQAFAAQAAIAAAAQAAQAEAAAEQTQA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Timing\NetworkTime.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Unity.Netcode.Transports.UTP.BatchedSendQueue" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="31.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AUDAQAAIACAAAAAAAogAAABCQAgAAACABgAAAFAAgAE=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Transports\UTP\BatchedSendQueue.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Unity.Netcode.Transports.UTP.NetworkMetricsContext" Collapsed="true">
+    <Position X="28.25" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAIAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Transports\UTP\NetworkMetricsContext.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Unity.Netcode.Transports.UTP.NetworkMetricsPipelineStage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="30" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACCQABAAAAAkAAAAAAAAAAAAAQEAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Transports\UTP\NetworkMetricsPipelineStage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Interface Name="Unity.Netcode.Components.INetworkTransformLogStateEntry" Collapsed="true">
+    <Position X="33.5" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Components\NetworkTransform.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Unity.Netcode.Components.IContactEventHandler" Collapsed="true">
+    <Position X="0.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Components\RigidbodyContactEventManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Unity.Netcode.Components.IContactEventHandlerWithInfo" Collapsed="true">
+    <Position X="0.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Components\RigidbodyContactEventManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Unity.Netcode.INetworkUpdateSystem" Collapsed="true">
+    <Position X="35.25" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Core\NetworkUpdateLoop.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Unity.Netcode.IDeferredNetworkMessageManager" Collapsed="true">
+    <Position X="30" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAIAAAAAAAAAAAAAAEAAAAAAAQ=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\IDeferredNetworkMessageManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Unity.Netcode.INetworkHooks" Collapsed="true">
+    <Position X="35.25" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAgAAAABgAIAAAgoAIAAAAAAAAAAAAEAAAEAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\INetworkHooks.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Unity.Netcode.INetworkMessage" Collapsed="true">
+    <Position X="37" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAACBAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\INetworkMessage.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Unity.Netcode.INetworkMessageProvider" Collapsed="true">
+    <Position X="38.75" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\INetworkMessageProvider.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Unity.Netcode.INetworkMessageSender" Collapsed="true">
+    <Position X="40.5" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\INetworkMessageSender.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Unity.Netcode.IGroupRpcTarget" Collapsed="true">
+    <Position X="31.75" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\RpcTargets\IGroupRpcTarget.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Unity.Netcode.IIndividualRpcTarget" Collapsed="true">
+    <Position X="33.5" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\RpcTargets\IIndividualRpcTarget.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Unity.Netcode.INetworkMetrics" Collapsed="true">
+    <Position X="42.25" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEgiAAAABAIMAKIAAQDAAAAAAQJAASABICAgICABM=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Metrics\INetworkMetrics.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Unity.Netcode.INetworkVariableSerializer&lt;T&gt;" Collapsed="true">
+    <Position X="37" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAADAAAAAAAgAAAAoAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\NetworkVariable\Serialization\INetworkVariableSerializer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Unity.Netcode.ISceneManagerHandler" Collapsed="true">
+    <Position X="42.25" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAYEAQAAAABAAAYCAIAABAAAAAAAIAAAAAgCAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\SceneManagement\ISceneManagerHandler.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Unity.Netcode.INetworkSerializable" Collapsed="true">
+    <Position X="28.25" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Serialization\INetworkSerializable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Unity.Netcode.INetworkSerializeByMemcpy" Collapsed="true">
+    <Position X="30" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Serialization\INetworkSerializeByMemcpy.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Unity.Netcode.IReaderWriter" Collapsed="true">
+    <Position X="38.75" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UAAAAAAAAEAAAAAAgAAAAAAAAAgAAAEAAABAIAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Serialization\IReaderWriter.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Unity.Netcode.INetworkPrefabInstanceHandler" Collapsed="true">
+    <Position X="26.5" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Spawning\NetworkPrefabHandler.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Unity.Netcode.IAnticipationEventReceiver" Collapsed="true">
+    <Position X="28.25" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Timing\AnticipationSystem.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Unity.Netcode.IAnticipatedObject" Collapsed="true">
+    <Position X="26.5" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAABA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Timing\AnticipationSystem.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Unity.Netcode.IRealTimeProvider" Collapsed="true">
+    <Position X="40.5" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAABAAAAAAAABAAAAAAAAAAAAAQBAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Timing\IRealTimeProvider.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Unity.Netcode.Transports.UTP.INetworkStreamDriverConstructor" Collapsed="true">
+    <Position X="31.75" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Transports\UTP\UnityTransport.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Unity.Netcode.HashSize" Collapsed="true">
+    <Position X="28.25" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Configuration\HashSize.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Unity.Netcode.NetworkPrefabOverride" Collapsed="true">
+    <Position X="37" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAgAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Configuration\NetworkPrefab.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Unity.Netcode.ConnectionEvent" Collapsed="true">
+    <Position X="26.5" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAABAAAAAAAAABAAAIAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Connection\NetworkConnectionManager.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Unity.Netcode.NetworkUpdateStage" Collapsed="true">
+    <Position X="40.5" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQBAIAAAgAAEAAAIAAAAAAAAAAAAAAAAAAAAAGAAgA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Core\NetworkUpdateLoop.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Unity.Netcode.LogLevel" Collapsed="true">
+    <Position X="31.75" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAQAAAAAAAAAAAIAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Logging\LogLevel.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Unity.Netcode.RpcDelivery" Collapsed="true">
+    <Position X="28.25" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\RpcAttributes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Unity.Netcode.LocalDeferMode" Collapsed="true">
+    <Position X="30" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAEAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\RpcParams.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Unity.Netcode.SendTo" Collapsed="true">
+    <Position X="35.25" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAKAAAIAAAABAAAAAAAAABAAEAAAAAACAgAAgAI=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\RpcTargets\RpcTarget.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Unity.Netcode.RpcTargetUse" Collapsed="true">
+    <Position X="30" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAgAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Messaging\RpcTargets\RpcTarget.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Unity.Netcode.StaleDataHandling" Collapsed="true">
+    <Position X="37" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\NetworkVariable\AnticipatedNetworkVariable.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Unity.Netcode.NetworkVariableReadPermission" Collapsed="true">
+    <Position X="42.25" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\NetworkVariable\NetworkVariablePermission.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Unity.Netcode.NetworkVariableWritePermission" Collapsed="true">
+    <Position X="26.5" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\NetworkVariable\NetworkVariablePermission.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Unity.Netcode.SceneEventType" Collapsed="true">
+    <Position X="33.5" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgICAAAAAAAAAQAAEAAAEAAAAAAAAIAAQAgAAAAQ=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\SceneManagement\SceneEventData.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Unity.Netcode.SceneEventProgressStatus" Collapsed="true">
+    <Position X="31.75" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAIAAAJAAAAAAAAAIAQAAAAAAAkAEEAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\SceneManagement\SceneEventProgress.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Unity.Netcode.NetworkDelivery" Collapsed="true">
+    <Position X="33.5" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAABBAAAAAAQAAAAAAEAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Transports\NetworkDelivery.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Unity.Netcode.NetworkEvent" Collapsed="true">
+    <Position X="35.25" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACQAAAAAAAAAAAAAAAAAAIAAAAAAABAAAAIAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Transports\NetworkEvent.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Unity.Netcode.NetworkTopologyTypes" Collapsed="true">
+    <Position X="38.75" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\NGO\com.unity.netcode.gameobjects\Runtime\Transports\NetworkTransport.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="맑은 고딕" Size="9" />
+</ClassDiagram>

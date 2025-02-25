@@ -1,10 +1,7 @@
 using Epic.OnlineServices;
 using Epic.OnlineServices.P2P;
 using System;
-using System.Net.Sockets;
 using UnityEngine;
-using UnityEngine.SocialPlatforms;
-
 public partial class EOS_Core : SingletonMonoBehaviour<EOS_Core>
 {
     [SerializeField]
@@ -21,7 +18,6 @@ public partial class EOS_Core : SingletonMonoBehaviour<EOS_Core>
     ulong _onPacketQueueFullHandle;
     SocketId _cashedsocketID;
     ProductUserId _cashedProductUserID;
-
     public struct EOS_Packet
     {
         public string _socketName;
