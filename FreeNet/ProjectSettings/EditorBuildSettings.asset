@@ -6,56 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/NGO/Example/PingTool/Assets/Scenes/SampleScene.unity
-    guid: 1f8ac51383dc49741bfedb59fddbb9bc
-  - enabled: 1
-    path: Assets/NGO/Example/testproject/Assets/Samples/SamplesMenu.unity
-    guid: 037562c9b1a469f498dfb34256ddf86f
-  - enabled: 1
-    path: Assets/NGO/Example/testproject/Assets/Samples/SpawnObject/SimpleSpawn.unity
-    guid: 2a46f77814044a6448d9c8872d851905
-  - enabled: 1
-    path: Assets/NGO/Example/testproject/Assets/Samples/PrefabPool/PrefabPoolOverrideExample.unity
-    guid: 8c9bee1332e0526429d8a2c929945d60
-  - enabled: 1
-    path: Assets/NGO/Example/testproject/Assets/Samples/PrefabPool/PrefabPoolExample.unity
-    guid: e4732b28c18f52c4dbe06c8a37f7997f
-  - enabled: 1
-    path: Assets/NGO/Example/testproject/Assets/Samples/Physics/PhysicsSample.unity
-    guid: 2c76877ad66aa22458c62a0d74514a91
-  - enabled: 1
-    path: Assets/NGO/Example/testproject/Assets/Samples/EnableDisableNetworkObject/EnableDisableSceneNetworkObject.unity
-    guid: 619b9eba5892d5a4e9dd1d6cafb0059a
-  - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
     path: Assets/FreeNet/Example/Login/Login.unity
     guid: 5ce5c67851c918241bf346210fafe496
   - enabled: 1
     path: Assets/FreeNet/Example/Lobby/LobbyScene.unity
     guid: 3f27bea648c14804fa1d612b11e110e4
-  - enabled: 1
-    path: Assets/FreeNet/Example/Game/GameScene.unity
-    guid: 80930130cf9b2494194aeca5316200d4
-  - enabled: 1
-    path: Assets/NGO/Example/CharacterControllerMovingBodies/Assets/Scenes/CharacterController.unity
-    guid: 42a8dccfb0e1fea4c89f8f49747fec26
-  - enabled: 1
-    path: Assets/NGO/Example/testproject/Assets/MainMenu.unity
-    guid: 21c7fd68cda9dd9488fc0cc01f885e39
-  - enabled: 1
-    path: Assets/NGO/Example/testproject/Assets/Scenes/MultiprocessTestScene.unity
-    guid: 76743cb7b342c49279327834918a9c6e
-  - enabled: 1
-    path: Assets/NGO/Example/testproject/Assets/Scenes/SampleScene.unity
-    guid: b502f764cc99ee64c9492e8ee25a997c
-  - enabled: 1
-    path: Assets/NGO/Example/testproject/Assets/Scenes/ZooSam.unity
-    guid: 4683469c9a191411fbda5e426765b2fc
-  - enabled: 1
-    path: Assets/NGO/Example/testproject/Assets/Samples/Teleport/TeleportSample.unity
-    guid: efa247d1f78ca694f8d2dcb5672e8f8b
-  m_configObjects:
-    com.unity.input.settings: {fileID: 11400000, guid: 1a9a2def3192e314aaf09c7ee7937fa9, type: 2}
+  m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

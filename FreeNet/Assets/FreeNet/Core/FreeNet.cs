@@ -5,16 +5,15 @@ public class FreeNet : SingletonMonoBehaviour<FreeNet>
     public EOS_Core _eosCore { get; private set; }
     public EOS_SingleLobbyManager _singleLobbyManager { get; private set; }
     public EOS_LocalUser _localUser { get; private set; }
-
-    public NetworkManager _NGOManager;
-
+    public NgoManager _ngoManager;
     private void Awake()
     {
         SingletonSpawn(this);
     }
     private IEnumerator Start()
     {
-        _NGOManager  = GetComponent<NgoManager>();  
+        _ngoManager = GetComponent<NgoManager>();
+        _ngoManager.Init(this);
         yield return EOS_Core.WaitInitialize();
         _eosCore = EOS_Core._instance;
         yield return EOS_LocalUser.WaitInitialize();
@@ -25,7 +24,6 @@ public class FreeNet : SingletonMonoBehaviour<FreeNet>
         yield return EOS_SingleLobbyManager.WaitInitialize();
         SingletonInitialize();
     }
-
     public override void OnRelease()
     {
         if (_eosCore._InitState == EOS_Core.InitState.Suceess)
@@ -34,7 +32,6 @@ public class FreeNet : SingletonMonoBehaviour<FreeNet>
             _eosCore.OnRelease();
         }
     }
-
     private void OnApplicationQuit()
     {
         OnRelease();

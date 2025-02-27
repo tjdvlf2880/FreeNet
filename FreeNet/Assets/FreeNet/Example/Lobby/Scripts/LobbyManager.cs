@@ -85,7 +85,7 @@ public class LobbyManager : SingletonMonoBehaviour<LobbyManager>
     }
     void OnLeaved(EOS_SingleLobbyManager.EOS_Lobby lobby)
     {
-        _freeNet._NGOManager.Shutdown();    
+        _freeNet._ngoManager.Shutdown();    
         _lastLobby = lobby;
         _lobbyControl.gameObject.SetActive(true);
         UpdateLobbyStateUI();
@@ -96,19 +96,19 @@ public class LobbyManager : SingletonMonoBehaviour<LobbyManager>
         _lobbyControl.gameObject.SetActive(false);
         if (lobby.GetLobbyCode(out string code))
         {
-            _freeNet._NGOManager.OnClientStopped -= NGODisConnected;
-            _freeNet._NGOManager.OnClientStarted -= NGOConnected;
-            _freeNet._NGOManager.OnClientStopped += NGODisConnected;
-            _freeNet._NGOManager.OnClientStarted += NGOConnected;
+            _freeNet._ngoManager.OnClientStopped -= NGODisConnected;
+            _freeNet._ngoManager.OnClientStarted -= NGOConnected;
+            _freeNet._ngoManager.OnClientStopped += NGODisConnected;
+            _freeNet._ngoManager.OnClientStarted += NGOConnected;
             var transition = new BasicTransition("NGOClientConnect", _basicTransitionUI, "NGO Client Connect...");
             _transitionUI.AddTransition(transition); 
             if (lobby._lobbyOwner.ToString() == lobby._localPUID.ToString())
             {
-                _freeNet.GetComponent<EOSNetcodeTransport>().StartHost(lobby._localPUID, code);
+                _freeNet._ngoManager.StartHost(lobby._localPUID, code);
             }
             else
             {
-                _freeNet.GetComponent<EOSNetcodeTransport>().StartClient(lobby._localPUID, lobby._lobbyOwner, code);
+                _freeNet._ngoManager.StartClient(lobby._localPUID, lobby._lobbyOwner, code);
             }
         }
         UpdateLobbyStateUI();
@@ -130,8 +130,8 @@ public class LobbyManager : SingletonMonoBehaviour<LobbyManager>
     {
         _lobbyControl._onJoined -= OnJoined;
         //_openLobbyUIKeyBinding._onKeyInputChanged -= OnOpenLobbyUIKey;
-        _freeNet._NGOManager.OnClientStopped -= NGODisConnected;
-        _freeNet._NGOManager.OnClientStarted -= NGOConnected;
+        _freeNet._ngoManager.OnClientStopped -= NGODisConnected;
+        _freeNet._ngoManager.OnClientStarted -= NGOConnected;
         Destroy(_lobbyControl);
     }
 }

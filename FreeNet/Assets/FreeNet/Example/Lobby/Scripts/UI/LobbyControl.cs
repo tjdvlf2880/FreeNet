@@ -35,7 +35,7 @@ public class LobbyControl : MonoBehaviour
         _freeNet = FreeNet._instance;
         yield return SingletonMonoBehaviour<SingletonCanvas>.WaitInitialize();
         _transitionUI = SingletonCanvas._instance.GetComponentInChildren<TransitionUI>();
-        _basicTransitionUI = _transitionUI.GetRootUI().GetComponentInChildren<BasicTransitionUI>();
+        _basicTransitionUI = _transitionUI.GetRootUI().GetComponentInChildren<BasicTransitionUI>(true);
     }
     private void OnEnable()
     {

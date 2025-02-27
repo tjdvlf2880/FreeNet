@@ -20,9 +20,9 @@ public class EOS_Socket
         public State _State { get; private set; }
         public EOS_Core.Role _remoteRole { get; private set; }
         public EOSWrapper.ETC.PUID _remotePUID { get; private set; }
-        public event Action<Connection> _onEnqueuePacket;
+        public event Action<Connection , int> _onEnqueuePacket;
         public event Action<Connection> _onConnectionStateChanged;
-        private Queue<EOS_Core.EOS_Packet> _IncomingPackets;
+        private Dictionary<int,Queue<EOS_Core.EOS_Packet>> _IncomingPackets;
         public void SetState(State state)
         {
             if (_State != state)
@@ -37,19 +37,29 @@ public class EOS_Socket
             _onEnqueuePacket = null;
             _onConnectionStateChanged = null;
         }
-        public bool DeqeuePacket(out EOS_Core.EOS_Packet packet)
+        public bool DeqeuePacket(int channel, out EOS_Core.EOS_Packet packet)
         {
-            return _IncomingPackets.TryDequeue(out packet);
+            packet = default;
+            if (_IncomingPackets.TryGetValue(channel, out var queue))
+            {
+                return queue.TryDequeue(out packet);
+            }
+            return false;
         }
         public void EnqueuePacket(EOS_Core.EOS_Packet packet)
         {
-            _IncomingPackets.Enqueue(packet);
-            _onEnqueuePacket?.Invoke(this);
+            if(!_IncomingPackets.TryGetValue(packet._channel,out var queue))
+            {
+                queue = new Queue<EOS_Packet>();
+                _IncomingPackets.Add(packet._channel, queue);
+            }
+            queue.Enqueue(packet);
+            _onEnqueuePacket?.Invoke(this, packet._channel);
         }
 
         public Connection(EOS_Core.Role role, string remotepuid = null)
         {
-            _IncomingPackets = new Queue<EOS_Core.EOS_Packet>();
+            _IncomingPackets = new Dictionary<int, Queue<EOS_Packet>>();
             _remoteRole = role;
             _remotePUID = new EOSWrapper.ETC.PUID(remotepuid);
             _State = State.Disconnected;

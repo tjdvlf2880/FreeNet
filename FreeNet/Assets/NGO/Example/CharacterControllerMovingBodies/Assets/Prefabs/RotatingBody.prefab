@@ -67,9 +67,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PushDirection: 1
-  ToCenterDirOrig: {x: 0, y: 0, z: 0}
-  ToCenterDirCalc: {x: 0, y: 0, z: 0}
-  ToCenterDirTrans: {x: 0, y: 0, z: 0}
 --- !u!1 &1070469363212057228
 GameObject:
   m_ObjectHideFlags: 0
@@ -661,9 +658,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PushDirection: 0
-  ToCenterDirOrig: {x: 0, y: 0, z: 0}
-  ToCenterDirCalc: {x: 0, y: 0, z: 0}
-  ToCenterDirTrans: {x: 0, y: 0, z: 0}
 --- !u!1 &4405129256840456534
 GameObject:
   m_ObjectHideFlags: 0
@@ -731,9 +725,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PushDirection: 0
-  ToCenterDirOrig: {x: 0, y: 0, z: 0}
-  ToCenterDirCalc: {x: 0, y: 0, z: 0}
-  ToCenterDirTrans: {x: 0, y: 0, z: 0}
 --- !u!1 &5415449980466536476
 GameObject:
   m_ObjectHideFlags: 0
@@ -796,8 +787,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 8.023605, y: 8.144613, z: 20.106205}
-  m_Center: {x: -0.03800702, y: 4.1726913, z: -0.02903366}
+  m_Size: {x: 8.023605, y: 8.144613, z: 19.891119}
+  m_Center: {x: -0.038006783, y: 4.1726913, z: -0.13657665}
 --- !u!114 &3307166493715739449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -810,8 +801,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 1921503253
-  InScenePlacedSourceGlobalObjectIdHash: 0
+  GlobalObjectIdHash: 4008578868
+  InScenePlacedSourceGlobalObjectIdHash: 1084435762
   DeferredDespawnTick: 0
   Ownership: 2
   AlwaysReplicateAsRoot: 0
@@ -822,6 +813,7 @@ MonoBehaviour:
   DontDestroyWithOwner: 1
   AutoObjectParentSync: 1
   SyncOwnerTransformWhenParented: 1
+  AllowOwnerToParent: 0
 --- !u!114 &850162744905636139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -834,6 +826,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 374ac199eb18f0f468bc018a722775c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
+  NetworkTransformExpanded: 0
   AuthorityMode: 1
   TickSyncChildren: 1
   UseUnreliableDeltas: 0
@@ -856,9 +850,15 @@ MonoBehaviour:
   SwitchTransformSpaceWhenParented: 0
   Interpolate: 1
   SlerpPosition: 0
-  RotationSpeed: 0.25
-  RotateDirection: 0
-  ZAxisMove: 0
+  RotatingBodyLogicExpanded: 1
+  RotationSpeed: 0
+  RotateDirection: 1
+  OnExitTransferParentOnStay: {fileID: 0}
+  PathMovement:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &5463907175177238004
 GameObject:
   m_ObjectHideFlags: 0
@@ -869,6 +869,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2053800158975384476}
   - component: {fileID: 2688281628964240045}
+  - component: {fileID: 6785450553262659636}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -956,6 +957,29 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &6785450553262659636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5463907175177238004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &6529740436184164063
 GameObject:
   m_ObjectHideFlags: 0
@@ -1133,6 +1157,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PushDirection: 1
-  ToCenterDirOrig: {x: 0, y: 0, z: 0}
-  ToCenterDirCalc: {x: 0, y: 0, z: 0}
-  ToCenterDirTrans: {x: 0, y: 0, z: 0}

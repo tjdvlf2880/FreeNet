@@ -40,8 +40,6 @@ namespace Unity.Netcode
 
         protected internal readonly List<BufferedItem> m_Buffer = new List<BufferedItem>(k_BufferCountLimit);
 
-
-
         // Buffer consumption scenarios
         // Perfect case consumption
         // | 1 | 2 | 3 |

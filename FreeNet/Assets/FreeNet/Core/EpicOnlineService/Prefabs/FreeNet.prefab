@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 5638840595219564629}
   - component: {fileID: 5627721505230031937}
   - component: {fileID: 504527534607244539}
-  - component: {fileID: 3937322449704547839}
   - component: {fileID: 3325498750599291758}
+  - component: {fileID: 5414378766924594789}
   m_Layer: 0
   m_Name: FreeNet
   m_TagString: Untagged
@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ea9cbab0554e3543b128a5170912536, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _NGOManager: {fileID: 3937322449704547839}
+  _ngoManager: {fileID: 0}
 --- !u!114 &5638840595219564629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96d4c046b5c843448a8baa62d76f1ea5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3937322449704547839
+--- !u!114 &3325498750599291758
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -105,10 +105,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 8333627843497335675}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 593a2fe42fa9d37498c96f9a383b6521, type: 3}
+  m_Script: {fileID: 11500000, guid: 33fe14cf14989fd459e7e752df099ed3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NetworkManagerExpanded: 0
+  _serverPrefab: {fileID: 7442204872536507182, guid: 6021ffa603a51de4d950f53d190ac9a1, type: 3}
+  _clientPrefab: {fileID: 6065444359779417420, guid: 8779e0404bbbc3a42b182ae45051f480, type: 3}
+--- !u!114 &5414378766924594789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8333627843497335675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6203ba09d8ed6dd47813ddfd1dc315c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NetworkManagerExpanded: 1
   NetworkConfig:
     ProtocolVersion: 0
     NetworkTransport: {fileID: 3325498750599291758}
@@ -116,7 +130,6 @@ MonoBehaviour:
     Prefabs:
       NetworkPrefabsLists:
       - {fileID: 11400000, guid: 96d8296871211e44284bccd9a0f0496a, type: 2}
-      - {fileID: 11400000, guid: 8ef743abfa57cc444b32e48fafbf4efd, type: 2}
     TickRate: 30
     ClientConnectionBufferTimeout: 10
     ConnectionApproval: 0
@@ -140,17 +153,3 @@ MonoBehaviour:
     OldPrefabList: []
   RunInBackground: 1
   LogLevel: 1
---- !u!114 &3325498750599291758
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8333627843497335675}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33fe14cf14989fd459e7e752df099ed3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _serverPrefab: {fileID: 7442204872536507182, guid: 6021ffa603a51de4d950f53d190ac9a1, type: 3}
-  _clientPrefab: {fileID: 6065444359779417420, guid: 8779e0404bbbc3a42b182ae45051f480, type: 3}

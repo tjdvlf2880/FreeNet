@@ -6150,7 +6150,6 @@ GameObject:
   - component: {fileID: 1895717738}
   - component: {fileID: 1895717739}
   - component: {fileID: 1895717741}
-  - component: {fileID: 1895717740}
   m_Layer: 0
   m_Name: LobbyManager
   m_TagString: Untagged
@@ -6186,18 +6185,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _singletonUI: {fileID: 2080324643}
---- !u!114 &1895717740
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1895717737}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab8fe5d6d31dd8e47a6ece1a3749edc6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1895717741
 MonoBehaviour:
   m_ObjectHideFlags: 0

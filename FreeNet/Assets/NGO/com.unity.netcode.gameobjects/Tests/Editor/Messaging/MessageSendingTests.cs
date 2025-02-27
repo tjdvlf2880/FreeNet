@@ -275,7 +275,6 @@ namespace Unity.Netcode.EditorTests
             m_MessageManager.SendMessage(ref message, NetworkDelivery.Reliable, m_Clients);
 
             m_MessageManager.ProcessSendQueues();
-            m_MessageManager.ProcessIncomingMessageQueue();
             Assert.AreEqual(1, m_MessageSender.MessageQueue.Count);
         }
 

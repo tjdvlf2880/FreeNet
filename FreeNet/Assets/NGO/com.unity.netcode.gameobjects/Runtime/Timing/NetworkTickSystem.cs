@@ -75,14 +75,14 @@ namespace Unity.Netcode
         /// </summary>
         /// <param name="localTimeSec">The local time in seconds</param>
         /// <param name="serverTimeSec">The server time in seconds</param>
+
+        public static int lasttick;
         public void UpdateTick(double localTimeSec, double serverTimeSec)
         {
             // store old local tick to know how many fixed ticks passed
             var previousLocalTick = LocalTime.Tick;
-
             LocalTime = new NetworkTime(TickRate, localTimeSec);
             ServerTime = new NetworkTime(TickRate, serverTimeSec);
-
             // cache times here so that we can adjust them to temporary values while simulating ticks.
             var cacheLocalTime = LocalTime;
             var cacheServerTime = ServerTime;

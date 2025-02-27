@@ -1,6 +1,7 @@
 using Epic.OnlineServices;
 using Epic.OnlineServices.P2P;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using static EOS_Socket;
@@ -10,13 +11,13 @@ public class EOS_Server : EOS_Peer
     public EOSWrapper.ETC.PUID _localPUID { get; private set; }
     private Dictionary<int, EOSWrapper.ETC.PUID> _ConnectIDmapping;
     private Dictionary<EOSWrapper.ETC.PUID, int> _PUIDmapping;
-    public Queue<(int, ArraySegment<byte>)> _incomingPacket;
-    public event Action<(int, EOS_Core.EOS_Packet)> _onReceivedPacket;
+    public event Action<int,int> _onReceivedPacket;
+    Dictionary<EOSWrapper.ETC.PUID, Dictionary<int, Queue<EOS_Core.EOS_Packet>>> _incomingPackets;
     public event Action<(int, EOS_Socket.Connection)> _onConnectionStateChanged;
 
     public delegate int GetNewConnectID(EOS_Core.Role role);
     GetNewConnectID _GetNewConnectIDDelegate;
-    public void Init(EOSWrapper.ETC.PUID localPUID, string socketid, byte channel, GetNewConnectID getNewConnectIDDelegate)
+    public void Init(EOSWrapper.ETC.PUID localPUID, string socketid, GetNewConnectID getNewConnectIDDelegate)
     {
         _eosNet = SingletonMonoBehaviour<EOS_Core>._instance;
         _state = state.stop;
@@ -27,11 +28,10 @@ public class EOS_Server : EOS_Peer
         _socket._onClosed -= OnClosedCB;
         _socket._onMakeConnection += OnMakeConnectionCB;
         _socket._onClosed += OnClosedCB;
-        _channel = channel;
         _eosNet = SingletonMonoBehaviour<EOS_Core>._instance;
         _ConnectIDmapping = new Dictionary<int, EOSWrapper.ETC.PUID>();
         _PUIDmapping = new Dictionary<EOSWrapper.ETC.PUID, int>();
-        _incomingPacket = new Queue<(int, ArraySegment<byte>)>();
+        _incomingPackets = new Dictionary<EOSWrapper.ETC.PUID, Dictionary<int, Queue<EOS_Core.EOS_Packet>>>();  
     }
     public void RemoveMapping(EOSWrapper.ETC.PUID puid)
     {
@@ -98,29 +98,86 @@ public class EOS_Server : EOS_Peer
             return newID;
         }
     }
-    public void OnServerEnqueuePacket(EOS_Socket.Connection connection)
+    public void OnServerEnqueuePacket(EOS_Socket.Connection connection,int channel)
     {
-        if (connection.DeqeuePacket(out var packet))
+        if (connection.DeqeuePacket(channel, out var packet))
         {
+            if (!_incomingPackets.TryGetValue(connection._remotePUID, out var incomingPackets))
+            {
+                incomingPackets = new Dictionary<int, Queue<EOS_Core.EOS_Packet>>();
+                _incomingPackets.Add(connection._remotePUID, incomingPackets);
+            }
+
+            if (!incomingPackets.TryGetValue(channel, out var queue))
+            {
+                queue = new Queue<EOS_Core.EOS_Packet>();
+                incomingPackets.Add(channel, queue);
+            }
+            queue.Enqueue(packet);
             if (GetConnectID(connection._remotePUID, out int id))
             {
-                _incomingPacket.Enqueue((id, packet._data));
-                _onReceivedPacket?.Invoke((id,packet));
+                _onReceivedPacket?.Invoke(id,channel);
             }
         }
     }
-    public void SendToClient(byte channelId, ArraySegment<byte> segment, int connectionId, PacketReliability reliability)
+
+    public bool DequeuePacket(EOSWrapper.ETC.PUID puid, int channel, out EOS_Core.EOS_Packet packet)
+    {
+        packet = default;
+        if(_incomingPackets.TryGetValue(puid, out var incomingpackets))
+        {
+            if (incomingpackets.TryGetValue(channel, out var queue))
+            {
+                return queue.TryDequeue(out packet);
+            }
+        }
+        return false;
+    }
+    public bool DequeuePacket(int channel, out EOS_Core.EOS_Packet packet)
+    {
+        packet = default;
+        foreach (var incomingpackets in _incomingPackets.Values)
+        {
+            foreach (var queue in incomingpackets)
+            {
+                if(channel == queue.Key)
+                {
+                    foreach (var item in queue.Value)
+                    {
+                        return queue.Value.TryDequeue(out packet);
+                    }
+                }
+            }
+        }
+        return false;
+    }
+    public bool DequeuePacket(int id,int channel, out EOS_Core.EOS_Packet packet)
+    {
+        packet = default;
+        if (GetPUID(id,out var puid))
+        {
+            if (_incomingPackets.TryGetValue(puid, out var incomingPackets))
+            {
+                if(incomingPackets.TryGetValue(channel,out var queue))
+                { 
+                    return queue.TryDequeue(out packet);
+                }
+            }
+        }
+        return false;
+    }
+    public void SendToClient(byte channel, ArraySegment<byte> segment, int connectionId, PacketReliability reliability)
     {
         if (GetPUID(connectionId, out var puid))
         {
             if(puid._puid == _localPUID._puid)
             {
-                _eosNet.SendLocal(_socket, EOS_Core.Role.localClient, _channel, segment);
+                _eosNet.SendLocal(_socket, EOS_Core.Role.localClient, channel, segment);
 
             }
             else
             {
-                _eosNet.SendPeer(_socket, ProductUserId.FromString(puid._puid), _channel, segment, reliability);
+                _eosNet.SendPeer(_socket, ProductUserId.FromString(puid._puid), channel, segment, reliability);
             }
         }
     }

@@ -41,7 +41,7 @@ public class PlayZone : NetworkBehaviour
             readyPlayers.Clear();
             foreach (ulong networkObjectId in _playerNetworkIDs)
             {
-                if (FreeNet._instance._NGOManager.SpawnManager.SpawnedObjects.TryGetValue(networkObjectId, out var netObj))
+                if (FreeNet._instance._ngoManager.SpawnManager.SpawnedObjects.TryGetValue(networkObjectId, out var netObj))
                 {
                     if (_lobbySceneManager._cahsedClientIDMapping.ContainsKey(netObj.OwnerClientId))
                     {
@@ -100,7 +100,7 @@ public class PlayZone : NetworkBehaviour
                     _isReady = true;
                     foreach (ulong networkObjectId in _playerNetworkIDs)
                     {
-                        if (FreeNet._instance._NGOManager.SpawnManager.SpawnedObjects.TryGetValue(networkObjectId, out netObj))
+                        if (FreeNet._instance._ngoManager.SpawnManager.SpawnedObjects.TryGetValue(networkObjectId, out netObj))
                         {
                             var player = netObj.GetComponent<Player>();
                             player.RequestPUIDRpc();

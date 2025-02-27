@@ -242,6 +242,7 @@ namespace Unity.Netcode
         /// <param name="rttSec">The current RTT in seconds. Can be an averaged or a raw value.</param>
         public void Sync(double serverTimeSec, double rttSec)
         {
+            rttSec = 0.3;
             LastSyncedRttSec = rttSec;
             LastSyncedServerTimeSec = serverTimeSec;
 

@@ -214,7 +214,6 @@ namespace Unity.Netcode.EditorTests
             m_PreviousTick = 0;
             m_TickSystem = new NetworkTickSystem(tickRate, start, start2);
             m_TimeSystem = NetworkTimeSystem.ServerTimeSystem();
-
             m_TickSystem.Tick += TickUpdate;
             foreach (var step in steps)
             {

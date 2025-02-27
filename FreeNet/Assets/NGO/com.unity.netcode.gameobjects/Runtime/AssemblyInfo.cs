@@ -1,4 +1,5 @@
 using System.Runtime.CompilerServices;
+[assembly: InternalsVisibleTo("FreeNet")]
 [assembly: InternalsVisibleTo("Unity.Netcode.Components")]
 #if UNITY_EDITOR
 [assembly: InternalsVisibleTo("Unity.Netcode.Editor")]

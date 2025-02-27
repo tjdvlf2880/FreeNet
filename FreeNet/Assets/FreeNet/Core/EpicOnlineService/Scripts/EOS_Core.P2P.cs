@@ -20,6 +20,7 @@ public partial class EOS_Core : SingletonMonoBehaviour<EOS_Core>
     ProductUserId _cashedProductUserID;
     public struct EOS_Packet
     {
+        public EOSWrapper.ETC.PUID _senderPUID;
         public string _socketName;
         public byte _channel;
         public ArraySegment<byte> _data;
@@ -85,6 +86,7 @@ public partial class EOS_Core : SingletonMonoBehaviour<EOS_Core>
     {
         var packet = new EOS_Packet()
         {
+            _senderPUID = socket._localPUID,
             _socketName = socket._socketID.SocketName,
             _channel = channel,
             _data = data
@@ -105,6 +107,7 @@ public partial class EOS_Core : SingletonMonoBehaviour<EOS_Core>
     {
         var packet = new EOS_Packet()
         {
+            _senderPUID = socket._localPUID,
             _socketName = socket._socketID.SocketName,
             _channel = channel,
             _data = data.ToArray()
@@ -127,8 +130,6 @@ public partial class EOS_Core : SingletonMonoBehaviour<EOS_Core>
             }
         }
     }
-
-
     private void ReceivePacket(EOSWrapper.ETC.PUID localID, ref int curframePacketNum)
     {
         int curClientPacketNum = 0;
@@ -136,13 +137,14 @@ public partial class EOS_Core : SingletonMonoBehaviour<EOS_Core>
         {
             if (EOSWrapper.P2PControl.ReceiveNextPacket(_IP2P, localID._PUID, ref _cashedProductUserID, ref _cashedsocketID, nextBytes, out ArraySegment<byte> dataSegment, out byte channel))
             {
+                var remotePUID = new EOSWrapper.ETC.PUID(_cashedProductUserID);
                 var newpacket = new EOS_Packet()
                 {
+                    _senderPUID = remotePUID,
                     _socketName = _cashedsocketID.SocketName,
                     _channel = channel,
                     _data = dataSegment
                 };
-                var remotePUID = new EOSWrapper.ETC.PUID(_cashedProductUserID);
                 if (_sockets.TryGetValue(localID, _cashedsocketID.SocketName, out var socket))
                 {
                     if (socket.GetConnection(Role.RemotePeer, remotePUID, out var connection))

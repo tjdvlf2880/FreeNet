@@ -1,5 +1,6 @@
 #if UNITY_EDITOR
 #define EOS_DYNAMIC_BINDINGS
+using UnityEditor;
 #endif
 using Epic.OnlineServices.Auth;
 using Epic.OnlineServices.Connect;
@@ -61,6 +62,9 @@ public partial class EOS_Core : SingletonMonoBehaviour<EOS_Core>
     }
     InitState Init()
     {
+#if UNITY_EDITOR
+        EditorApplication.playModeStateChanged += OnPlayModeChanged;
+#endif
         _factory = EOS_Factory.GetFactory();
         if(!_factory.LoadDLL()) return InitState.Fail;
         EOS_Credential credential = null;
@@ -100,14 +104,26 @@ public partial class EOS_Core : SingletonMonoBehaviour<EOS_Core>
         _IPlatform?.Tick();
         ReceivePacket();
     }
+    private static void OnPlayModeChanged(PlayModeStateChange state)
+    {
+        if (state == PlayModeStateChange.ExitingPlayMode)
+        {
+            EOS_Core._instance.OnRelease();
+        }
+    }
+
     public override void OnRelease()
     {
-        if(_InitState== InitState.Suceess)
+#if UNITY_EDITOR
+        EditorApplication.playModeStateChanged -= OnPlayModeChanged;
+#endif
+        if (_InitState == InitState.Suceess)
         {
             ReleaseP2P();
             _IPlatform?.Release();
             PlatformInterface.Shutdown();
             _factory.UnLoadDLL();
+            _InitState = InitState.Fail;
         }
     }
     void OnApplicationFocus(bool hasFocus)
