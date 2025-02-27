@@ -1,5 +1,6 @@
 using System;
 using Unity.Profiling;
+using UnityEngine;
 
 namespace Unity.Netcode
 {
@@ -203,6 +204,10 @@ namespace Unity.Netcode
         /// <returns></returns>
         public bool Advance(double deltaTimeSec)
         {
+            // Offset 보정 속도가 논리상 맞지 않아 보여 수정함
+            // Reset 기준을 과거 롤백 유무로 전환
+
+#if !CUSTUMNETCODEFIX 
             m_TimeSec += deltaTimeSec;
 
             if (Math.Abs(m_DesiredLocalTimeOffset - m_CurrentLocalTimeOffset) > HardResetThresholdSec || Math.Abs(m_DesiredServerTimeOffset - m_CurrentServerTimeOffset) > HardResetThresholdSec)
@@ -222,6 +227,43 @@ namespace Unity.Netcode
             m_CurrentServerTimeOffset += deltaTimeSec * (m_DesiredServerTimeOffset > m_CurrentServerTimeOffset ? AdjustmentRatio : -AdjustmentRatio);
 
             return false;
+#else
+
+            var cashedLocalTime = LocalTime;
+            var cashedServerTime = ServerTime;
+            m_TimeSec += deltaTimeSec;
+            if (Math.Abs(m_DesiredLocalTimeOffset - m_CurrentLocalTimeOffset) > HardResetThresholdSec || Math.Abs(m_DesiredServerTimeOffset - m_CurrentServerTimeOffset) > HardResetThresholdSec)
+            {
+                m_TimeSec += m_DesiredServerTimeOffset;
+
+                m_DesiredLocalTimeOffset -= m_DesiredServerTimeOffset;
+                m_CurrentLocalTimeOffset = m_DesiredLocalTimeOffset;
+
+                m_DesiredServerTimeOffset = 0;
+                m_CurrentServerTimeOffset = 0;
+
+                return true;
+            }
+            else
+            {
+                double localRange = m_DesiredLocalTimeOffset - m_CurrentLocalTimeOffset;
+                if (Math.Abs(localRange) > double.Epsilon)
+                {
+                    m_CurrentLocalTimeOffset = m_CurrentLocalTimeOffset + (m_DesiredLocalTimeOffset - m_CurrentLocalTimeOffset) * Mathf.Clamp01((float)(deltaTimeSec / localRange));
+                }
+                localRange = m_DesiredServerTimeOffset - m_CurrentServerTimeOffset;
+                if (Math.Abs(localRange) > double.Epsilon)
+                {
+                    m_CurrentServerTimeOffset = m_CurrentServerTimeOffset + (m_DesiredServerTimeOffset - m_CurrentServerTimeOffset) * Mathf.Clamp01((float)(deltaTimeSec / localRange));
+                }
+            }
+            
+            if(cashedLocalTime > LocalTime || cashedServerTime > ServerTime)
+            {
+                return true;
+            }
+            return false;
+#endif
         }
 
         /// <summary>
@@ -242,7 +284,6 @@ namespace Unity.Netcode
         /// <param name="rttSec">The current RTT in seconds. Can be an averaged or a raw value.</param>
         public void Sync(double serverTimeSec, double rttSec)
         {
-            rttSec = 0.3;
             LastSyncedRttSec = rttSec;
             LastSyncedServerTimeSec = serverTimeSec;
 

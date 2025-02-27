@@ -4,7 +4,6 @@ using Unity.Netcode;
 public class NetworkHUD : MonoBehaviour
 {
     private bool showHud = true; // HUD 표시 여부
-    public GameObject _spawnerPrefab;
     private void OnGUI()
     {
         if (showHud)

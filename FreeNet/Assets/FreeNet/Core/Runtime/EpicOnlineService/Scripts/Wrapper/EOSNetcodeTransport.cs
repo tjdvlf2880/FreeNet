@@ -7,7 +7,7 @@ using System.Text;
 public class EOSNetcodeTransport : NetworkTransport
 {
     [SerializeField]
-    PingPong _pingpong;
+    public PingPong _pingpong;
 
     [SerializeField]
     EOS_Server _serverPrefab;
@@ -163,11 +163,9 @@ public class EOSNetcodeTransport : NetworkTransport
     }
     public override ulong GetCurrentRtt(ulong clientId)
     {
-        if(_pingpong.GetRtt(clientId,out var rtt))
-        {
-            return (ulong)(rtt);
-        }
-        return 0;
+        double rtt = 0;
+        _pingpong.GetRtt(clientId, out rtt);
+        return (ulong)rtt;
     }
     public override void Send(ulong transportID, ArraySegment<byte> payload, NetworkDelivery networkDelivery)
     {

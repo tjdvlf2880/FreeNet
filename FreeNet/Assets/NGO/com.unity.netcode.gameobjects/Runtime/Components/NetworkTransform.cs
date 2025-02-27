@@ -3117,6 +3117,24 @@ namespace Unity.Netcode.Components
         /// <inheritdoc/>
         public override void OnNetworkSpawn()
         {
+            // 보간 예측 범위 및 지연 감소
+#if CUSTUMNETCODEFIX
+            m_ParentedChildren.Clear();
+            m_CachedNetworkManager = NetworkManager;
+            float tickfrequency = 1 / (float)m_CachedNetworkManager.NetworkConfig.TickRate;
+            var ticksAgo = 2;
+            SetMaxInterpolationBound(ticksAgo + tickfrequency);
+            m_RotationInterpolator.MaximumInterpolationTime = tickfrequency;
+            m_PositionInterpolator.MaximumInterpolationTime = tickfrequency;
+            m_ScaleInterpolator.MaximumInterpolationTime = tickfrequency;
+
+            Initialize();
+
+            if (CanCommitToTransform)
+            {
+                SetState(GetSpaceRelativePosition(), GetSpaceRelativeRotation(), GetScale(), false);
+            }
+#else
             m_ParentedChildren.Clear();
             m_CachedNetworkManager = NetworkManager;
 
@@ -3126,6 +3144,8 @@ namespace Unity.Netcode.Components
             {
                 SetState(GetSpaceRelativePosition(), GetSpaceRelativeRotation(), GetScale(), false);
             }
+
+#endif
         }
 
         private void CleanUpOnDestroyOrDespawn()
@@ -3307,7 +3327,7 @@ namespace Unity.Netcode.Components
         {
             InternalInitialization();
         }
-        #endregion
+#endregion
 
         #region PARENTING AND OWNERSHIP
         // This might seem aweful, but when transitioning between two parents in local space we need to

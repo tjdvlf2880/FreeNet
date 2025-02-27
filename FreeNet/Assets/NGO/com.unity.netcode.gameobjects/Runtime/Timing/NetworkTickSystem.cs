@@ -86,10 +86,8 @@ namespace Unity.Netcode
             // cache times here so that we can adjust them to temporary values while simulating ticks.
             var cacheLocalTime = LocalTime;
             var cacheServerTime = ServerTime;
-
             var currentLocalTick = LocalTime.Tick;
             var localToServerDifference = currentLocalTick - ServerTime.Tick;
-
             for (int i = previousLocalTick + 1; i <= currentLocalTick; i++)
             {
                 // set exposed time values to correct fixed values
@@ -104,7 +102,6 @@ namespace Unity.Netcode
                 s_Tick.End();
 #endif
             }
-
             // Set exposed time to values from tick system
             LocalTime = cacheLocalTime;
             ServerTime = cacheServerTime;

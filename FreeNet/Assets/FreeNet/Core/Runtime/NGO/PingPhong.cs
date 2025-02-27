@@ -6,15 +6,34 @@ using System.Collections.Generic;
 public class PingPong : NetworkBehaviour
 {
     public string MessageName = "PingPongMessage";
+    float _jitterRange;
+    bool _virtualRtt;
+    float _fixedRtt;
+
     private Dictionary<ulong, double> _smoothedRTT;
     private const float Alpha = 0.125f;
     public override void OnNetworkSpawn()
     {
+        _jitterRange = 0;
+        _fixedRtt = 0;
+        _virtualRtt = false;
+
         _smoothedRTT  = new Dictionary<ulong, double>();
         NetworkManager.CustomMessagingManager.RegisterNamedMessageHandler(MessageName, ReceiveMessage);
         NetworkManager.OnClientConnectedCallback += OnClientConnected;
         NetworkManager.OnClientDisconnectCallback += OnClientDisConnected;
     }
+    public void SetVirtualRrtt(bool virtualRtt , float fixedRtt = 0)
+    {
+        _virtualRtt = virtualRtt;
+        _fixedRtt = fixedRtt;
+    }
+
+    public void SetJitterRanage(float jitterRange)
+    {
+        _jitterRange = jitterRange;
+    }
+
     private void OnClientConnected(ulong clientId)
     {
         _smoothedRTT.Add(clientId, 0);
@@ -84,9 +103,20 @@ public class PingPong : NetworkBehaviour
             }
         }
     }
-
-    public bool GetRtt(ulong clientId,out double rtt)
+    public bool GetRtt(ulong clientId, out double rtt)
     {
-        return _smoothedRTT.TryGetValue(clientId, out rtt);
+        rtt = 0;
+        var jitter = Random.Range(-_jitterRange, _jitterRange);
+        if (_virtualRtt)
+        {
+            rtt = _fixedRtt + jitter;
+            return true;
+        }
+        else if(_smoothedRTT.TryGetValue(clientId, out rtt))
+        {
+            rtt = _fixedRtt + jitter;
+            return true;
+        }
+        return false;
     }
 }

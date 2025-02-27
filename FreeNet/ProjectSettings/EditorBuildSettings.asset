@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/NGO/Example/CharacterControllerMovingBodies/Assets/Scenes/CharacterController.unity
+    guid: 42a8dccfb0e1fea4c89f8f49747fec26
+  - enabled: 1
     path: Assets/FreeNet/Example/Login/Login.unity
     guid: 5ce5c67851c918241bf346210fafe496
   - enabled: 1

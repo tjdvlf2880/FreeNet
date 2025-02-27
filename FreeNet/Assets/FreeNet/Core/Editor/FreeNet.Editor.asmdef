@@ -1,0 +1,20 @@
+{
+    "name": "FreeNet.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:9f4f5bf029cebb64f983b7bdc29f62a1",
+        "GUID:1491147abca9d7d4bb7105af628b223e",
+        "GUID:2b302b8915f77f24a844c06fcdc423cc"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

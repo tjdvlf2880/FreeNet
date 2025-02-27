@@ -1,9 +1,10 @@
 using System.Runtime.CompilerServices;
-[assembly: InternalsVisibleTo("FreeNet")]
+[assembly: InternalsVisibleTo("FreeNet.Runtime")]
 [assembly: InternalsVisibleTo("Unity.Netcode.Components")]
 #if UNITY_EDITOR
 [assembly: InternalsVisibleTo("Unity.Netcode.Editor")]
 [assembly: InternalsVisibleTo("Unity.Netcode.Editor.CodeGen")]
+[assembly: InternalsVisibleTo("FreeNet.Editor")]
 #endif // UNITY_EDITOR
 #if MULTIPLAYER_TOOLS
 [assembly: InternalsVisibleTo("Unity.Multiplayer.Tools.Adapters.Ngo1WithUtp2")]

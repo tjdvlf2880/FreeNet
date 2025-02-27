@@ -104,6 +104,8 @@ public partial class EOS_Core : SingletonMonoBehaviour<EOS_Core>
         _IPlatform?.Tick();
         ReceivePacket();
     }
+
+#if UNITY_EDITOR
     private static void OnPlayModeChanged(PlayModeStateChange state)
     {
         if (state == PlayModeStateChange.ExitingPlayMode)
@@ -111,6 +113,7 @@ public partial class EOS_Core : SingletonMonoBehaviour<EOS_Core>
             EOS_Core._instance.OnRelease();
         }
     }
+#endif
 
     public override void OnRelease()
     {

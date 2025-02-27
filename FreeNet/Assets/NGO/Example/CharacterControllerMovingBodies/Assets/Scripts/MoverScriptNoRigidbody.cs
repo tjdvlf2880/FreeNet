@@ -235,11 +235,15 @@ public class MoverScriptNoRigidbody : NetworkTransform
 
     private void Update()
     {
+        // for test
+        m_ParentedText.text = $"pos :{transform.position} \n local : {NetworkManager.LocalTime.Tick} \n server : {NetworkManager.ServerTime.Tick}";
         if (!IsSpawned || !CanCommitToTransform)
         {
             return;
         }
         ApplyInput();
+
+
     }
 
 
