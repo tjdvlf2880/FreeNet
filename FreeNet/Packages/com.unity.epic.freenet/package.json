@@ -1,0 +1,10 @@
+{
+  "name": "com.unity.epic.freenet",
+  "displayName": "FreeNet",
+  "description": "Free network solution with EOS SDK + Netcode for GameObject",
+  "version": "1.0.0",
+  "unity": "6000.0",
+  "dependencies": {
+    "com.unity.netcode.gameobjects": "2.2.0"
+  }
+}
